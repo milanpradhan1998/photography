@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photography</title>
+    <!-- bootstrap 5.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/responshive.css" />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+  </head>
+  <body class="container-fluid p-0">
+    <main>
+      <!-- header -->
+      <section class="p-0 m-0 mb-2 row position-relative">
+        <header class="p-0 header-box">
+          <!-- nav bar -->
+          <div
+            class="px-1 d-flex justify-content-between align-items-center nav-box text-white"
+          >
+            <div class="d-flex">
+              <button
+                onclick="sideBar()"
+                class="d-block d-md-none d-lg-none me-1 bg-transparent border border-0 text-white"
+                style="height: 35px; width: 35px"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <h4><a class="a-unstyle" href="/">Digital Studio</a></h4>
+            </div>
+            <div class="col-4 d-none d-lg-block d-md-block">
+              <ul class="list-unstyled d-flex justify-content-evenly my-auto">
+                <li>
+                  <a class="a-unstyle" href="./pages/gallery.html">Gallery</a>
+                </li>
+                <li>
+                  <a class="a-unstyle" href="./pages/about.html">About</a>
+                </li>
+                <li>
+                  <a class="a-unstyle" href="./pages/contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="h-75 d-flex flex-column justify-content-center">
+            <p
+              class="text-center fw-bolder auto-type text-white"
+              style="font-size: 3.5rem"
+            ></p>
+          </div>
+        </header>
+        <!-- side bar -->
+        <aside
+          id="side-bar"
+          class="col-8 position-fixed text-white side-bar p-0"
+        >
+          <div class="d-flex p-1 justify-content-between">
+            <h4>Digital Studio</h4>
+            <button
+              onclick="sideBar()"
+              class="border border-0 bg-transparent text-white"
+              style="height: 35px; width: 35px"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="mt-4 mx-1">
+            <ul class="list-unstyled mx-auto fs-2">
+              <li class="mb-2 border border-1 border-white p-1">
+                <a class="a-unstyle" href="./pages/gallery.html">Gallery</a>
+              </li>
+              <li class="mb-2 border border-1 border-white p-1">
+                <a class="a-unstyle" href="./pages/about.html">About</a>
+              </li>
+              <li class="mb-2 border border-1 border-white p-1">
+                <a class="a-unstyle" href="./pages/contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="position-absolute bottom-0 w-100 bg-info py-3">
+            <ul
+              class="list-unstyled d-flex justify-content-around align-items-center my-auto"
+            >
+              <li><i class="fa-brands fa-facebook"></i></li>
+              <li><i class="fa-brands fa-instagram"></i></li>
+              <li><i class="fa-regular fa-envelope"></i></li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+      <!-- section 2 -->
+      <section class="p-0 m-0 mb-2 row">
+        <!-- achievement box -->
+        <div
+          class="bg-white d-flex flex-column flex-lg-row align-items-center justify-content-lg-evenly mx-lg-auto col-12 col-lg-10 p-0"
+        >
+          <!-- item 1 -->
+          <div class="d-flex col-lg-3 col-11 m-2 p-0 ach-card">
+            <div>
+              <img
+                src="./images/icon/experience.png"
+                style="width: 90px; height: 90px"
+              />
+            </div>
+            <div class="d-flex flex-column justify-content-center ms-2">
+              <p class="h5 mb-1">Experience</p>
+              <p class="fw-bold mb-0">We have 8 year of experience.</p>
+            </div>
+          </div>
+          <!-- item 2 -->
+          <div class="d-flex col-lg-3 col-11 m-2 ach-card">
+            <div>
+              <img
+                src="./images/icon/brainstorm.png"
+                style="width: 90px; height: 90px"
+              />
+            </div>
+            <div class="d-flex flex-column justify-content-center ms-2">
+              <p class="h5 mb-1">Team</p>
+              <p class="fw-bold mb-0">Our team has 10 experience members.</p>
+            </div>
+          </div>
+          <!-- item 3 -->
+          <div class="d-flex col-lg-3 col-11 m-2 ach-card">
+            <div>
+              <img
+                src="./images/icon/crm.png"
+                style="width: 90px; height: 90px"
+              />
+            </div>
+            <div class="d-flex flex-column justify-content-center ms-2">
+              <p class="h5 mb-1">Client's</p>
+              <p class="fw-bold mb-0">More then 100+ happy clients.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- gallery -->
+      <section class="p-0 m-0 mb-2 row">
+        <div
+          class="position-relative bg-white m-auto col-12 col-lg-10 p-0 gallery-box"
+        >
+          <ul class="main-nav m-auto">
+            <li class="item1">
+              <div class="bg"></div>
+            </li>
+            <li class="item2">
+              <div class="bg"></div>
+            </li>
+            <li class="item3">
+              <div class="bg"></div>
+            </li>
+            <li class="item4">
+              <div class="bg"></div>
+            </li>
+            <li class="item5">
+              <div class="bg"></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Services -->
+      <section class="p-0 m-0 mb-2 row">
+        <div class="col-12 col-lg-10 m-auto bg-white fw-bolder fs-3">
+          <p>Our services</p>
+        </div>
+        <div
+          class="col-12 col-lg-10 d-flex justify-content-around flex-wrap m-auto bg-white p-lg-2 p-1"
+        >
+          <!-- item -->
+          <div class="item-card p-1">
+            <div>
+              <img src="./images/wedding.jpg" />
+            </div>
+            <div class="p-1">
+              <p class="fs-5 fw-bold mb-1">Wedding Photography</p>
+              <p class="fs-6 fw-bold mb-1 text-secondary">
+                We provide you a personal photographer to capture you best
+                movement.
+              </p>
+              <div class="d-flex justify-content-end">
+                <button
+                  class="btn btn-outline-success"
+                  data-bs-toggle="modal"
+                  data-bs-target="#product-info"
+                  onclick="getProductInfo(1)"
+                >
+                  Read more..
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="item-card p-1">
+            <div>
+              <img src="./images/birthday11.jpeg" />
+            </div>
+            <div class="p-1 d-flex flex-column justify-content-between">
+              <p class="fs-5 fw-bold mb-1">Event Photography</p>
+              <p class="fs-6 fw-bold mb-1 text-secondary">
+                We provide you a personal photographer to capture you best
+                movement.
+              </p>
+              <div class="d-flex justify-content-end mb-2">
+                <button
+                  class="btn btn-outline-success"
+                  data-bs-toggle="modal"
+                  data-bs-target="#product-info"
+                  onclick="getProductInfo(2)"
+                >
+                  Read more..
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="item-card p-1">
+            <div>
+              <img src="./images/travel.jpg" />
+            </div>
+            <div class="p-1">
+              <p class="fs-5 fw-bold mb-1">Travel Photography</p>
+              <p class="fs-6 fw-bold mb-1 text-secondary">
+                We provide you a personal photographer to capture you best
+                movement.
+              </p>
+              <div class="d-flex justify-content-end mb-2">
+                <button
+                  class="btn btn-outline-success"
+                  data-bs-toggle="modal"
+                  data-bs-target="#product-info"
+                  onclick="getProductInfo(3)"
+                >
+                  Read more..
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="item-card p-1">
+            <div>
+              <img src="./images/office.jpg" />
+            </div>
+            <div class="p-1">
+              <p class="fs-5 fw-bold mb-1">Official Photography</p>
+              <p class="fs-6 fw-bold mb-1 text-secondary">
+                We provide you a personal photographer to capture you best
+                movement.
+              </p>
+              <div class="d-flex justify-content-end mb-2">
+                <button
+                  class="btn btn-outline-success"
+                  data-bs-toggle="modal"
+                  data-bs-target="#product-info"
+                  onclick="getProductInfo(4)"
+                >
+                  Read more..
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <section class="p-0 m-0 row">
+        <div
+          class="col-12 p-0 text-white-50 p-lg-0 p-1"
+          style="background-color: #273c75"
+        >
+          <div class="p-1 text-white" style="background-color: #636e72">
+            <h4>Footer Nav</h4>
+          </div>
+          <div
+            class="d-flex flex-column flex-lg-row justify-content-around p-2"
+          >
+            <div class="col-lg-3 col-12">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                placeat magni ut harum dicta, tenetur odio expedita eos, in
+                facere ex excepturi quisquam quidem inventore magnam esse vero
+                sit amet!
+              </p>
+            </div>
+            <div class="col-lg-3 col-12">
+              <ul>
+                <li>Home</li>
+                <li>Gallery</li>
+                <li>About</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-12">
+              <ul class="d-flex list-unstyled fs-3">
+                <li class="m-2"><i class="fa-brands fa-facebook"></i></li>
+                <li class="m-2"><i class="fa-brands fa-instagram"></i></li>
+                <li class="m-2"><i class="fa-regular fa-envelope"></i></li>
+                <li class="m-2"><i class="fa-brands fa-whatsapp"></i></li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <div class="text-center">
+            <p>
+              <i class="fa-solid fa-code"></i> This website developed by
+              <span class="text-warning">Digiroot.in</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Modal item -->
+    <div
+      class="modal fade"
+      id="product-info"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- containted -->
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                nihil suscipit alias laudantium hic sint autem magnam sit eos.
+                Voluptates, voluptate repellat? Eveniet voluptates aliquam
+                nostrum beatae, mollitia at quia maxime veniam molestias rem
+                quaerat tenetur ut distinctio. Minus nesciunt voluptate libero
+                officia, eaque aperiam esse distinctio alias expedita qui?
+              </p>
+              <ul>
+                <li>One list</li>
+                <li>Two list</li>
+                <li>Three list</li>
+                <li>Four list</li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Contact Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- bootstrap js 5.1-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- type js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- main.js -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

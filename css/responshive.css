@@ -1,0 +1,32 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* sec 3 */
+  /* gallery */
+  .gallery-box {
+    height: 40vh;
+  }
+  .main-nav {
+    width: 220px;
+    height: 70px;
+  }
+  .main-nav li {
+    list-style: none;
+    position: absolute;
+    width: 4.7rem;
+    height: 4.7rem;
+    background: #000;
+    transform: rotate(45deg);
+    transition: 0.5s;
+    margin: -32px;
+    overflow: hidden;
+    opacity: 0.9;
+  }
+  /* sec 4 */
+  /* services */
+  .item-card {
+    width: 11rem;
+  }
+  .item-card div img {
+    height: 11rem;
+    width: 100%;
+  }
+}

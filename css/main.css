@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,800&display=swap");
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #dfe6e9;
+  font-family: "Poppins", sans-serif;
+}
+.a-unstyle {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+.a-unstyle:hover {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+/* header */
+.header-box {
+  height: 80vh;
+  background-color: #2c3e50;
+  background: linear-gradient(#353535cc 10%, transparent, #353535cc 90%),
+    url(../images/main-bg.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.nav-box {
+  height: 70px;
+  border-bottom: gray solid 1px;
+}
+.side-bar {
+  background-color: #313232;
+  height: 100vh;
+  display: none;
+  z-index: 10;
+}
+
+/* sec2 */
+/* achievement */
+.ach-card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* sec 3 */
+/* gallery */
+.gallery-box {
+  height: 65vh;
+}
+.main-nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  width: 600px;
+  height: 150px;
+}
+
+.main-nav li {
+  list-style: none;
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  background: #000;
+  transform: rotate(45deg);
+  transition: 0.5s;
+  margin: -100px;
+  overflow: hidden;
+  opacity: 0.9;
+}
+
+.main-nav li:hover {
+  opacity: 1;
+  transform: rotate(45deg) scale(1.1);
+}
+
+.main-nav li.item1 {
+  top: 0;
+  left: 0;
+}
+
+.main-nav li.item2 {
+  bottom: 0;
+  left: 25%;
+}
+
+.main-nav li.item3 {
+  top: 0;
+  left: 50%;
+}
+
+.main-nav li.item4 {
+  bottom: 0;
+  left: 75%;
+}
+
+.main-nav li.item5 {
+  top: 0;
+  left: 100%;
+}
+
+.main-nav li .bg {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.1);
+}
+
+.main-nav li.item1 .bg {
+  background: url(../images/1-dulhan.jfif);
+  background-size: cover;
+  background-position: center;
+}
+
+.main-nav li.item2 .bg {
+  background: url(../images/ind-girl.jfif);
+  background-size: cover;
+  background-position: center;
+}
+
+.main-nav li.item3 .bg {
+  background: url(../images/birthday.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.main-nav li.item4 .bg {
+  background: url(../images/travel.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.main-nav li.item5 .bg {
+  background: url(../images/ind-male.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* sec 4 */
+/* services */
+.item-card {
+  width: 16rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.item-card div img {
+  height: 11rem;
+  width: 100%;
+}
