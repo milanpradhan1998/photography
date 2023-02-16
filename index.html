@@ -23,6 +23,16 @@
   </head>
   <body class="container-fluid p-0">
     <main>
+      <div id="loader">
+        <iframe
+          src="https://giphy.com/embed/26DN2iTaW5mmmJtug"
+          width="480"
+          height="360"
+          frameborder="0"
+          class="giphy-embed"
+          allowfullscreen
+        ></iframe>
+      </div>
       <!-- header -->
       <section class="p-0 m-0 mb-2 row position-relative">
         <header class="p-0 header-box">
@@ -274,7 +284,7 @@
         </div>
       </section>
       <!-- Footer -->
-      <section class="p-0 m-0 row">
+      <section class="p-0 m-0 row mt-auto">
         <div
           class="col-12 p-0 text-white-50 p-lg-0 p-1"
           style="background-color: #273c75"
@@ -381,5 +391,12 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- main.js -->
     <script src="./js/main.js"></script>
+    <!-- page loader -->
+    <script>
+      var loader = document.getElementById("loader");
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
   </body>
 </html>
